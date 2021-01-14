@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+    
+    
+    <ImageView
+        android:layout_width="420dp"
+        android:layout_height="440dp"
+        android:src="@drawable/scorpio"
+        android:id="@+id/mainImageView"
+        android:layout_gravity="center"
+        android:padding="12dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:padding="25dp">
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Horoscope"
+            android:id="@+id/main_horoscope_button"
+            android:background="#5a2b80"
+            android:padding="15dp"
+            android:layout_marginLeft="15dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tarot Reading"
+            android:id="@+id/main_tarot_button"
+            android:background="#5a2b80"
+            android:layout_marginRight="15dp"
+            android:padding="15dp"/>
+    </LinearLayout>
+    
+</LinearLayout>
