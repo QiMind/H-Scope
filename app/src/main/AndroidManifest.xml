@@ -10,11 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HoroscopGenerator">
 
+
         <activity android:name=".TarotActivity"
             android:theme="@style/Theme.MaterialComponents.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.horoscopgenerator.THIRD_ACT" />
-
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
@@ -29,10 +29,9 @@
         </activity>
 
         <activity android:name=".MainActivity"
-            android:theme="@style/Theme.MaterialComponents.NoActionBar">
+            android:theme="@style/SplashScreenTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

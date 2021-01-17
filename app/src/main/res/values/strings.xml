@@ -1,5 +1,19 @@
 <resources>
     <string name="app_name">Horoscop Generator</string>
+    <string-array name="zodiacs">
+        <item>CAPRICORN</item>
+        <item>AQUARIUS</item>
+        <item>PISCES</item>
+        <item>ARIES</item>
+        <item>TAURUS</item>
+        <item>GEMINI</item>
+        <item>CANCER</item>
+        <item>LEO</item>
+        <item>VIRGO</item>
+        <item>LIBRA</item>
+        <item>SCORPIO</item>
+        <item>SAGITTARIUS</item>
+    </string-array>
     <string name="zsCap">CAPRICORN</string>
     <string name="zsAq">AQUARIUS</string>
     <string name="zsPs">PISCES</string>

@@ -33,12 +33,13 @@
         android:padding="10dp"/>
 
     <ImageView
+        android:id="@+id/zodiacImg"
         android:layout_width="60dp"
         android:layout_height="80dp"
         android:layout_marginTop="20dp"
         android:layout_marginBottom="20dp"
         android:src="@drawable/ic_gemini"
-        />
+        app:srcCompat="@drawable/ic_launcher_foreground" />
 
 
     <TextView
@@ -68,6 +69,7 @@
         android:id="@+id/horoscope_prediction_text"
         android:textSize="16dp"
         android:text="PREDICTION"
+        android:gravity="center"
         android:fontFamily="-monospace"
         android:textColor="#e0e0e0"
         android:padding="15dp"/>
