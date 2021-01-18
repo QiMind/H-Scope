@@ -1,5 +1,6 @@
 package com.example.horoscopgenerator;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.PersistableBundle;
 import android.view.View;
@@ -23,13 +24,14 @@ import java.util.Random;
 public class HoroscopeActivity extends AppCompatActivity {
 
     MaterialButton zodiacNameBtn;
-    int choice = 1;
     private TextView prediction;
     ImageView zodiacImg;
+
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.horoscope_layout);
         zodiacNameBtn = findViewById(R.id.horoscope_zodiac_sign_name);
         prediction = findViewById(R.id.horoscope_prediction_text);
@@ -59,50 +61,50 @@ public class HoroscopeActivity extends AppCompatActivity {
                 System.out.println("The read failed: " + error.getCode());
             }
         });
-        zodiacNameBtn.setText(changeZodiacSign(7));
+        zodiacNameBtn.setText(changeZodiacSign(MainActivity.choice));
     }
 
     public void doGoBack(View v) {
         Toast.makeText(this, "Text", Toast.LENGTH_SHORT).show();
     }
 
-    public String changeZodiacSign(int choice){
+    public String changeZodiacSign(String choice){
         switch (choice)
         {
-            case 1:
+            case "AQUARIUS":
                 zodiacImg.setImageResource(R.drawable.ic_aquarius);
                 return getResources().getString(R.string.zsAq);
-            case 2:
+            case "PISCES":
                 zodiacImg.setImageResource(R.drawable.ic_pisces);
                 return getResources().getString(R.string.zsPs);
-            case 3:
+            case "ARIES":
                 zodiacImg.setImageResource(R.drawable.ic_aries);
                 return getResources().getString(R.string.zsAr);
-            case 4:
+            case "TAURUS":
                 zodiacImg.setImageResource(R.drawable.ic_taurus);
                 return getResources().getString(R.string.zsTr);
-            case 5:
+            case "GEMINI":
                 zodiacImg.setImageResource(R.drawable.ic_gemini);
                 return getResources().getString(R.string.zsGm);
-            case 6:
+            case "CANCER":
                 zodiacImg.setImageResource(R.drawable.ic_cancer);
                 return getResources().getString(R.string.zsCn);
-            case 7:
+            case "LEO":
                 zodiacImg.setImageResource(R.drawable.ic_leo);
                 return getResources().getString(R.string.zsLeo);
-            case 8:
+            case "VIRGO":
                 zodiacImg.setImageResource(R.drawable.ic_virgo);
                 return getResources().getString(R.string.zsVr);
-            case 9:
+            case "LIBRA":
                 zodiacImg.setImageResource(R.drawable.ic_libra);
                 return getResources().getString(R.string.zsLb);
-            case 10:
+            case "SCORPIO":
                 zodiacImg.setImageResource(R.drawable.ic_scorpio);
                 return getResources().getString(R.string.zsSc);
-            case 11:
+            case "SAGITTARIUS":
                 zodiacImg.setImageResource(R.drawable.ic_sagittarius);
                 return getResources().getString(R.string.zsSag);
-            case 12:
+            case "CAPRICORN":
                 zodiacImg.setImageResource(R.drawable.ic_capricorn__1_);
                 return getResources().getString(R.string.zsCap);
             default:
