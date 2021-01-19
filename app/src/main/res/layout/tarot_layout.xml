@@ -8,7 +8,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:gravity="center"
     android:background="@color/black"
-    android:layout_marginTop="-120dp">
+    android:layout_marginTop="-50dp">
 
 
 
@@ -33,10 +33,9 @@
 
     <ImageView
         android:layout_width="160dp"
-        android:layout_height="360dp"
-        android:layout_marginTop="-35dp"
-        android:layout_marginBottom="-35dp"
-        android:src="@drawable/wheel_of_fortune"
+        android:layout_height="260dp"
+
+        android:id="@+id/card_image"
         />
 
 
@@ -44,9 +43,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         style="@style/TextAppearance.MaterialComponents.Headline5"
-        android:id="@+id/horoscope_date"
+        android:id="@+id/card_name"
         android:textSize="16dp"
-        android:text="TODAY"
+
         android:fontFamily="-monospace"
         android:shadowColor="@color/black"
         android:shadowDx="1"
@@ -60,18 +59,122 @@
         android:layout_height="1dp"
         android:background="#DFC681"/>
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        style="@style/TextAppearance.MaterialComponents.Headline5"
-        android:id="@+id/horoscope_prediction_text"
+        android:id="@+id/fortune_telling"
         android:textSize="16dp"
-        android:text="PREDICTION"
+        android:text="Today's Reading "
         android:fontFamily="-monospace"
         android:textColor="#e0e0e0"
-        android:padding="15dp"/>
+        android:textStyle="bold"
+        style="@style/TextAppearance.MaterialComponents.Headline5"
+
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fortune_telling_text"
+            android:text="aaaa"
+            android:textSize="16dp"
+            android:fontFamily="-monospace"
+            android:textColor="#e0e0e0"
+
+            style="@style/TextAppearance.MaterialComponents.Headline5"
+
+            android:layout_marginBottom="8dp"/>
 
 
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/light"
+            android:textSize="16dp"
+            android:text="Light Meaning "
+            android:fontFamily="-monospace"
+            android:textColor="#e0e0e0"
+            android:textStyle="bold"
+
+            style="@style/TextAppearance.MaterialComponents.Headline5"
+           />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/light_text"
+            android:textSize="16dp"
+
+            android:fontFamily="-monospace"
+            android:textColor="#e0e0e0"
+            android:layout_marginBottom="8dp"
+            style="@style/TextAppearance.MaterialComponents.Headline5"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/shadow"
+            android:textSize="16dp"
+            android:text="Shadow Meaning"
+            android:fontFamily="-monospace"
+            android:textColor="#e0e0e0"
+            android:textStyle="bold"
+
+            style="@style/TextAppearance.MaterialComponents.Headline5"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/shadow_text"
+            android:textSize="16dp"
+
+            android:fontFamily="-monospace"
+            android:textColor="#e0e0e0"
+            android:layout_marginBottom="8dp"
+            style="@style/TextAppearance.MaterialComponents.Headline5"
+            />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/question"
+            android:textSize="16dp"
+            android:text="Question to ask"
+            android:textStyle="bold"
+
+            android:fontFamily="-monospace"
+            android:textColor="#e0e0e0"
+
+            style="@style/TextAppearance.MaterialComponents.Headline5"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/question_text"
+            android:textSize="16dp"
+
+            android:fontFamily="-monospace"
+            android:textColor="#e0e0e0"
+
+            style="@style/TextAppearance.MaterialComponents.Headline5"
+            />
+
+
+
+    </LinearLayout>
 
 
 </LinearLayout>

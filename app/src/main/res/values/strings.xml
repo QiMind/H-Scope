@@ -26,4 +26,16 @@
     <string name="zsLb">LIBRA</string>
     <string name="zsSc">SCORPIO</string>
     <string name="zsSag">SAGITTARIUS</string>
+
+   
+    
+    <string name="m00Str">Watch for new projects and new beginnings.Something new comes your way.Go for it!</string>
+    <string name="m01Str">A powerful man may play a role in your day.
+        Your current situation must be seen as one element of a much larger plan.</string>
+    <string name="m02Str">A mysterious woman arrives.Someone knows more than he or she will reveal.</string>
+    <string name="m03Str">Beware a tendency toward addiction.</string>
+    <string name="m04Str"></string>
+        
+        
+    
 </resources>

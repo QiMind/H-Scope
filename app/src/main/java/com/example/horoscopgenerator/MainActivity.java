@@ -69,6 +69,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this,TarotActivity.class);
+
+                Random randomCardNumber = new Random();
+                randomCardNumber.nextInt(70);
+
+                intent.putExtra("CardNumber",randomCardNumber);
+
                 startActivity(intent);
             }
         });
