@@ -36,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
     private ImageView im;
     private boolean cond = false;
     private int howTimes = 0;
+    private int howManyTimesTarot = 0;
     private HoroscopeActivity horoscopeActivity = new HoroscopeActivity();
     public static String choice;
 
@@ -90,7 +91,20 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this,TarotActivity.class);
-
+                Context ct = getApplicationContext();
+                CharSequence text = "Your Tarot Reading";
+                CharSequence text2 = "Your Tarot Card Has been changed";
+                Toast reTarot;
+                if(howManyTimesTarot == 0 )
+                {
+                    reTarot = Toast.makeText(ct, text, Toast.LENGTH_SHORT);
+                }
+                else
+                {
+                    reTarot = Toast.makeText(ct, text2, Toast.LENGTH_SHORT);
+                }
+                reTarot.show();
+                howManyTimesTarot++;
                 Random randomCardNumber = new Random();
                 randomCardNumber.nextInt(70);
 
