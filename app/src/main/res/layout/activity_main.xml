@@ -16,6 +16,19 @@
         android:padding="12dp"
         android:layout_marginTop="40dp"
         android:layout_marginBottom="40dp"/>
+    <Spinner
+        android:id="@+id/zodiacSpinner"
+        android:layout_width="194dp"
+        android:layout_height="59dp"
+        android:layout_gravity="center"
+        android:layout_margin="70dp"
+        android:fontFamily="-monospace"
+        android:gravity="center"
+        android:outlineAmbientShadowColor="@color/white"
+        android:padding="15dp"
+        android:text="Please Select Your Sign"
+        android:textColor="#e0e0e0"
+        android:textSize="16dp" />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -63,7 +76,9 @@
             android:layout_marginLeft="15dp"/>
 
 
+
     </LinearLayout>
 
-    
+
+
 </LinearLayout>
