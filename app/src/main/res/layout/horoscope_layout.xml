@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:background="@color/black"
+    android:layout_marginTop="-180dp">
+
+
+
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="260dp"
+        android:layout_height="60dp"
+        android:id="@+id/horoscope_zodiac_sign_name"
+
+        android:textSize="20dp"
+        app:shapeAppearance="@style/ShapeAppearance.MaterialComponents.SmallComponent"
+        android:focusable="false"
+        android:clickable="false"
+        android:textColor="#e0e0e0"
+        app:strokeColor="#DFC681"
+        app:backgroundTint="@color/black"
+        app:strokeWidth="1dp"
+        app:cornerRadius="24dp"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_marginTop="-80dp"
+        android:padding="10dp"/>
+
+    <ImageView
+        android:id="@+id/zodiacImg"
+        android:layout_width="60dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/ic_gemini"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/TextAppearance.MaterialComponents.Headline5"
+        android:id="@+id/horoscope_date"
+        android:textSize="16dp"
+        android:text="TODAY"
+        android:fontFamily="-monospace"
+        android:shadowColor="@color/black"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:textColor="#e0e0e0"
+        android:padding="15dp"/>
+
+
+    <View
+        android:layout_width="280dp"
+        android:layout_height="1dp"
+        android:background="#DFC681"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/TextAppearance.MaterialComponents.Headline5"
+        android:id="@+id/horoscope_prediction_text"
+        android:textSize="16dp"
+        android:text="PREDICTION"
+        android:gravity="center"
+        android:fontFamily="-monospace"
+        android:textColor="#e0e0e0"
+        android:padding="15dp"/>
+
+
+
+
+</LinearLayout>

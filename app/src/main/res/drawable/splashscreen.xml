@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <item android:drawable="@color/black" />
+    <item>
+        <bitmap
+            android:layout_width="420dp"
+            android:layout_height="440dp"
+            android:gravity="center"
+            android:src="@drawable/start_screen_pic"
+            android:padding="12dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="40dp"
+            />
+    </item>
+</layer-list>
